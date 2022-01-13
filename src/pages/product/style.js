@@ -25,7 +25,6 @@ export const ProductCategory  = styled.div`
   margin-left: 15px;
   padding-bottom: 20px;
   font-size: 40px;
-  background: whitesmoke;
   padding-top: 10px;
 `
 
@@ -33,12 +32,15 @@ export const ProductCategoryItem = styled.div`
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
-  border: 1px solid gray;
-  height: 60px;
-  text-align: center;
-  background: darkgray;
-  line-height: 60px;
   margin-top: 10px;
+  padding: 20px 0 0 10px;
+  border: 1px solid gray;
+  height: 40px;
+  text-align: left;
+  font-size: 20px;
+  color: #0a3343;
+  line-height: 20px;
+  
 `
 
 export const ProductDetail  = styled.div`
@@ -49,30 +51,27 @@ export const ProductDetail  = styled.div`
   height: 800px;
   line-height: 800px;
   font-size: 40px;
-  background: whitesmoke;
   text-align: center;
 `
 
 export const ProduchDetailTitle = styled.div`
   float: right;
-
   height: 100px;
-  width: 49%;
+  width: 47%;
   margin-top: 10px;
   margin-left: 1%;
   margin-right: 2%;
-  background: darkgray;
-  
-  font-size: 20px;
-  line-height: 100px;
-  text-align: center;
+  padding: 10px 0 0 10px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
 `;
 
 export const ProductDetailImage = styled.div`
   font-size: 20px;
   float: left;
   margin-top: 10px;
-  background: darkgray;
+  
   height: 325px;
   width: 45%;
   margin-left: 2%;
@@ -82,17 +81,14 @@ export const ProductDetailImage = styled.div`
 
 export const ProductDetailContent = styled.div`
   float: right;
-
   height: 215px;
-  width: 49%;
+  width: 47%;
   margin-top: 10px;
   margin-left: 1%;
   margin-right: 2%;
-  background: darkgray;
-  
-  font-size: 20px;
-  line-height: 215px;
-  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
 `;
 
 export const TechDataMenu = styled.div` 
@@ -102,8 +98,6 @@ export const TechDataMenu = styled.div`
   margin-top: 10px;
   margin-left: 2%;
   margin-right: 2%;
-  background: darkgray;
-  
   font-size: 20px;
   line-height: 50px;
   text-align: center;
@@ -114,11 +108,12 @@ export const TechDataMenuItem = styled.div`
   height: 50px;
   padding: 0 10px;
   margin: 0 17px;
-  background: darkgoldenrod;
-
   font-size: 20px;
   line-height: 50px;
   text-align: center;
+  &:hover{
+    border-bottom: 3px solid #000;;
+  }
 `;
 
 
@@ -129,11 +124,11 @@ export const TechDataDetail = styled.div`
   margin-top: 10px;
   margin-left: 2%;
   margin-right: 2%;
-  background: darkgray;
+
   
-  font-size: 24px;
-  line-height: 50px;
+  font-size: 16px;
+  line-height: 25px;
   text-overflow: inherit;
-  text-align: center;
+  text-align: left;
 `;
 

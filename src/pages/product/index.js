@@ -4,54 +4,57 @@ import {  ProductWrapper,
           ProductDetail, ProduchDetailTitle, ProductDetailImage, ProductDetailContent,
           TechDataMenu, TechDataMenuItem, TechDataDetail
 } from './style';
-
+import { connect } from 'react-redux';
+import image from '../../resource/image/aggregate1.jpg'
+import { actionCreator } from './store/index.js';
 
 class Product extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {  }
-  }
   render() { 
+    const { products, displayIndex, handleDisplayIndex } = this.props;
+    const productsObj = products.toJS();
     return ( 
     <ProductWrapper>
       <ProductCategory>
-        <ProductCategoryItem>产品1</ProductCategoryItem>
-        <ProductCategoryItem>产品2</ProductCategoryItem>
-        <ProductCategoryItem>产品3</ProductCategoryItem>
-        <ProductCategoryItem>产品4</ProductCategoryItem>
-        <ProductCategoryItem>产品5</ProductCategoryItem>
-        <ProductCategoryItem>产品6</ProductCategoryItem>
-        <ProductCategoryItem>产品7</ProductCategoryItem>
-        <ProductCategoryItem>产品8</ProductCategoryItem>
-        <ProductCategoryItem>产品9</ProductCategoryItem>
-        <ProductCategoryItem>产品10</ProductCategoryItem>
-        <ProductCategoryItem>产品11</ProductCategoryItem>
-        
+        {
+          productsObj.map((item,index) => {
+            return (
+              <ProductCategoryItem onClick={() => handleDisplayIndex(index)} key={item.productName+index}>{item.productName}</ProductCategoryItem>
+            )
+          })
+        } 
       </ProductCategory>
-
+      
       <ProductDetail>
-        <ProduchDetailTitle>product title 品名</ProduchDetailTitle>
-        <ProductDetailImage>product image 产品图片</ProductDetailImage>
-        <ProductDetailContent>short intro 产品简介</ProductDetailContent>
+        <ProduchDetailTitle>{productsObj[displayIndex].productName}</ProduchDetailTitle>
+        <ProductDetailImage><img src={image} width='240px' height='240px' /></ProductDetailImage>
+        <ProductDetailContent>{productsObj[displayIndex].productIntro}</ProductDetailContent>
 
         <TechDataMenu>
-          <TechDataMenuItem>Usage用处</TechDataMenuItem>
-          <TechDataMenuItem>Specs技术指标</TechDataMenuItem>
-          <TechDataMenuItem>Features特点</TechDataMenuItem>
-          <TechDataMenuItem>Sample案例</TechDataMenuItem>
+          <TechDataMenuItem>Usage</TechDataMenuItem>
+          <TechDataMenuItem>Specs</TechDataMenuItem>
+          <TechDataMenuItem>Features</TechDataMenuItem>
+          <TechDataMenuItem>Sample</TechDataMenuItem>
         </TechDataMenu>
 
-        <TechDataDetail> 
-          Details, can change when user hoven or click on different menu item
-          技术指标展示，可根据上方菜单选项变换
-        </TechDataDetail>
-
+        <TechDataDetail> {productsObj[displayIndex].techDetail} </TechDataDetail>
       </ProductDetail>
-
-      
-
     </ProductWrapper> );
   }
 }
- 
-export default Product;
+
+const mapStateToProps = (state) => {
+  return {
+    products: state.getIn(['product','products']),
+    displayIndex: state.getIn(['product','currentDisplayIndex'])
+  }
+};
+
+const mapDispathToProps = (dispatch) => {
+  return {
+    handleDisplayIndex(index){
+      dispatch(actionCreator.updateDisplayIndex(index));
+    }
+  }
+};
+
+export default connect(mapStateToProps, mapDispathToProps)(Product);

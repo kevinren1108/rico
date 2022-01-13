@@ -28,7 +28,7 @@ export const LogoWrapper = styled.div`
   background-size: contain;
   width: 100px;
   height: 100px
-  `
+`
 
 export const NavWrapper = styled.div`
   box-sizing: border-box;

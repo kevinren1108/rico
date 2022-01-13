@@ -1,0 +1,1 @@
+export const UPDATE_DISPLAY_INDEX = 'product/UPDATE_DISPLAY_INDEX'
