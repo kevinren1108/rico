@@ -6,6 +6,7 @@ import store from './store/index.js'
 import AboutUs from './pages/aboutUs'
 import Home from './pages/home'
 import Product from './pages/product';
+import Footer from './common/footer'
 
 class App extends PureComponent {
   
@@ -18,6 +19,7 @@ class App extends PureComponent {
             <Route path='/about' exact element={<AboutUs />}></Route>
             <Route path='/product' exact element={<Product />}></Route>
           </Routes>
+        <Footer/>
       </Provider>
 
      );
