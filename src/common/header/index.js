@@ -1,6 +1,5 @@
-import { CssBaseline } from '@mui/material';
 import React, { PureComponent } from 'react';
-
+import { Link } from 'react-router-dom'
 import { HeaderWrapper, LogoWrapper, NavItem, NavWrapper } from './style'
 
 class Header extends PureComponent {
@@ -10,13 +9,13 @@ class Header extends PureComponent {
   }
   render() { 
     return ( <div>
-      <CssBaseline/>
+
       <HeaderWrapper>
-        <LogoWrapper/>
+        <Link to='/'><LogoWrapper/></Link>
         <NavWrapper>
-          <NavItem>HOME</NavItem>
-          <NavItem>PRODUCT</NavItem>
-          <NavItem>ABOUT US</NavItem>
+          <Link to='/'><NavItem>HOME</NavItem></Link>
+          <Link to='/product'><NavItem>PRODUCT</NavItem></Link>
+          <Link to='/about'><NavItem>ABOUT US</NavItem></Link>
         </NavWrapper>
       </HeaderWrapper>
     </div>
