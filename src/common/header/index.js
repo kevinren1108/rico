@@ -1,5 +1,7 @@
+import { CssBaseline } from '@mui/material';
 import React, { PureComponent } from 'react';
-import Button from '@mui/material/Button';
+
+import { HeaderWrapper, LogoWrapper, NavItem, NavWrapper } from './style'
 
 class Header extends PureComponent {
   constructor(props) {
@@ -7,12 +9,23 @@ class Header extends PureComponent {
     this.state = {  }
   }
   render() { 
-    return ( 
-      <Button variant="contained">你好，世界</Button>
+    return ( <div>
+      <CssBaseline/>
+      <HeaderWrapper>
+        <LogoWrapper/>
+        <NavWrapper>
+          <NavItem>HOME</NavItem>
+          <NavItem>PRODUCT</NavItem>
+          <NavItem>ABOUT US</NavItem>
+        </NavWrapper>
+      </HeaderWrapper>
+    </div>
+      
     );
   }
 }
  
-//https://mui.com/zh/getting-started/installation/
 
 export default Header;
+
+//<img alt="logo" src={[require("../../statics/logo.png")]} />
