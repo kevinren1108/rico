@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import {  HomeWrapper, 
+          FeatureSwiperWrapper, 
+          WhatWeDOWrapper, 
+          ProductSwiperWrapper, 
+          WhoWeAreWrapper 
+} from './styled';
 
 class Home extends Component {
   constructor(props) {
@@ -7,12 +13,12 @@ class Home extends Component {
   }
   render() { 
     return (
-      <>
-        <div>Swiper</div>
-        <div>What we do</div>
-        <div>product swiper</div>
-        <div>who we are</div>
-      </>
+      <HomeWrapper>
+        <FeatureSwiperWrapper>Swiper</FeatureSwiperWrapper>
+        <WhatWeDOWrapper>What we do</WhatWeDOWrapper>
+        <ProductSwiperWrapper>product swiper</ProductSwiperWrapper>
+        <WhoWeAreWrapper>who we are</WhoWeAreWrapper>
+      </HomeWrapper>
       
     );
   }
