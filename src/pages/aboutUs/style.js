@@ -25,17 +25,15 @@ export const Division = styled.div`
   margin-left: 15px;
   padding-bottom: 20px;
   font-size: 40px;
-  background: whitesmoke;
+  color: #0a3343;
   padding-top: 10px;
   height: 500px
 `;
 
 export const DivisionContent = styled.div`
-
-  margin-left: 15px;
-  
+color: #0a3343;
   font-size: 20px;
-  background: whitesmoke;
+
   margin-top: 40px;
 `;
 
@@ -44,10 +42,8 @@ export const FindUs = styled.div`
   width: 31.6%;
   float: right;
   margin-left: 15px;
-
   font-size: 14px;
-  background: whitesmoke;
-
+  color: #0a3343;
 `;
 
 export const Hours = styled.div`
@@ -56,7 +52,22 @@ export const Hours = styled.div`
   margin-left: 15px;
   margin-top: 20px;
   font-size: 14px;
-  background: whitesmoke;
- 
+  color: #0a3343;
+  
 `;
 
+export const HoursItemWrapper = styled.div`
+  float:left;
+`
+
+export const HoursItem = styled.div`
+  float: left;
+  margin-left: 10px;
+  width: 80px;
+`
+
+export const HoursItemTime = styled.div`
+  float: left;
+  margin-left: 10px;
+  width: 90px;
+`

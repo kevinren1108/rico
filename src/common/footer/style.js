@@ -21,14 +21,15 @@ export const FooterMenu = styled.div`
 
 export const MenuItem = styled.div`
   margin: 10px 0;
-  color: gray;
+  color: #0a3343;
+  display: block;
 `;
 
 export const CopyRight = styled.div`
   margin-top: 10px;
   font-size: 12px;
   line-height: 20px;
-  color: gray;
+  color: #0a3343;
   
 `;
 
@@ -36,6 +37,6 @@ export const Address = styled.div`
   margin-top: 10px;
   font-size: 12px;
   line-height: 20px;
-  color: gray;
+  color: #0a3343;
   
 `;

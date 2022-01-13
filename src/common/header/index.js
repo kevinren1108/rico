@@ -15,7 +15,7 @@ class Header extends PureComponent {
         <NavWrapper>
           <Link to='/'><NavItem>HOME</NavItem></Link>
           <Link to='/product'><NavItem>PRODUCT</NavItem></Link>
-          <Link to='/about'><NavItem>ABOUT US</NavItem></Link>
+          <Link to='/about'><NavItem>ABOUT</NavItem></Link>
         </NavWrapper>
       </HeaderWrapper>
     </div>

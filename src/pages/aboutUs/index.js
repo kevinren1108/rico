@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AboutUsWrapper, Division, DivisionContent, FindUs, Hours} from './style';
+import { HoursItem, HoursItemWrapper, HoursItemTime, AboutUsWrapper, Division, DivisionContent, FindUs, Hours} from './style';
 
 
 class AboutUs extends Component {
@@ -9,7 +9,7 @@ class AboutUs extends Component {
 
     <AboutUsWrapper>
       <Division>
-        Company Division
+        About
         <DivisionContent> 
           <p>100字左右的企业寄语</p>
           <p>DOHO是在有色金属材料领域有着超过70年的经验与业绩的老牌商社，我们也正在不断努力为制造业领域带来更多创新。
@@ -20,21 +20,25 @@ class AboutUs extends Component {
         </DivisionContent>
       </Division>
       <FindUs>
-        <h1>地址</h1>
-        <p>123 Big st</p>
-        <p>City, Province</p>
-        <p>Canada, 邮编</p>
+        <h1>Address</h1>
+        <p>#45 - 6 Ratner St</p>
+        <p>Emerald Park, SK</p>
+        <p>Canada, S4L0E3</p>
         
       </FindUs>
       <Hours>
-        <h1>上班时间</h1>
-        <p>周一 9:00 - 6:00</p>
-        <p>周一 9:00 - 6:00</p>
-        <p>周一 9:00 - 6:00</p>
-        <p>周一 9:00 - 6:00</p>
-        <p>周一 9:00 - 6:00</p>
-        <p>周一 9:00 - 6:00</p>
-        <p>周一 9:00 - 6:00</p>
+        <h1>Hours</h1>
+        {
+          ['Monday','Tuesday','Wednesday','Thursday','Friday'].map((date) => {
+            return(
+              <HoursItemWrapper key={date}>
+                <HoursItem>{date}</HoursItem>
+                <HoursItemTime> 9:00 - 12:00</HoursItemTime>
+                <HoursItemTime>  2:00 - 5:00</HoursItemTime>
+              </HoursItemWrapper>
+            )
+          })
+        }
       </Hours>
       
 

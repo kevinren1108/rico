@@ -17,7 +17,8 @@ export const HeaderWrapper = styled.div`
   position: relative;
   height: 100px;
   width: 100%;
-  max-width: 1170px
+  max-width: 1170px;
+  color: #0a3343;
 `
 
 export const LogoWrapper = styled.div`
@@ -41,7 +42,7 @@ export const NavItem = styled.div`
   font-weight: bold;
   font-size: 0.875rem;
   margin: 30px 10px 30px 10px;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 15px 20px 15px;
   box-sizing: border-box;
   display: block;
   float: left;
@@ -49,4 +50,10 @@ export const NavItem = styled.div`
   line-height: 21px;
   text-size-adjust: 100%;
   text-align: center;
+  color: #0a3343;
+  border-bottom: 5px solid transparent;
+  &:hover{
+    border-bottom: 5px solid #0a3343;
+  }
+  
 `
