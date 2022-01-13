@@ -1,1 +1,2 @@
 export const UPDATE_DISPLAY_INDEX = 'product/UPDATE_DISPLAY_INDEX'
+export const UPDATE_TECH_MENU_INDEX = 'product/UPDATE_TECH_MENU_INDEX'

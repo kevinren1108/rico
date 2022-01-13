@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {  ProductWrapper, 
-          ProductCategory, ProductCategoryItem,
+          ProductCategory, ProductCategoryItem, ProductCategoryItemActive,
           ProductDetail, ProduchDetailTitle, ProductDetailImage, ProductDetailContent,
-          TechDataMenu, TechDataMenuItem, TechDataDetail
+          TechDataMenu, TechDataMenuItem, TechDataDetail, TechDataMenuItemActive
 } from './style';
 import { connect } from 'react-redux';
 import image from '../../resource/image/aggregate1.jpg'
@@ -10,16 +10,23 @@ import { actionCreator } from './store/index.js';
 
 class Product extends Component {
   render() { 
-    const { products, displayIndex, handleDisplayIndex } = this.props;
+    const { products, displayIndex, techMenuIndex, handleDisplayIndex, handleTechMeunIndex } = this.props;
     const productsObj = products.toJS();
     return ( 
     <ProductWrapper>
       <ProductCategory>
         {
           productsObj.map((item,index) => {
-            return (
-              <ProductCategoryItem onClick={() => handleDisplayIndex(index)} key={item.productName+index}>{item.productName}</ProductCategoryItem>
-            )
+            if(index === displayIndex){
+              return (
+                <ProductCategoryItemActive onClick={() => handleDisplayIndex(index)} key={item.productName+index}>{item.productName}</ProductCategoryItemActive>
+              )
+            }else{
+              return (
+                <ProductCategoryItem onClick={() => handleDisplayIndex(index)} key={item.productName+index}>{item.productName}</ProductCategoryItem>
+              )
+            }  
+            
           })
         } 
       </ProductCategory>
@@ -30,13 +37,22 @@ class Product extends Component {
         <ProductDetailContent>{productsObj[displayIndex].productIntro}</ProductDetailContent>
 
         <TechDataMenu>
-          <TechDataMenuItem>Usage</TechDataMenuItem>
-          <TechDataMenuItem>Specs</TechDataMenuItem>
-          <TechDataMenuItem>Features</TechDataMenuItem>
-          <TechDataMenuItem>Sample</TechDataMenuItem>
+          {['Usage','Specs','Features','Sample'].map((item,index)=>{
+              
+              if(index === techMenuIndex){
+                return(
+                  <TechDataMenuItemActive onClick={() => handleTechMeunIndex(index)} key={item+index} >{item}</TechDataMenuItemActive>
+                )
+              }else{
+                return(
+                  <TechDataMenuItem onClick={() => handleTechMeunIndex(index)} key={item+index} >{item}</TechDataMenuItem>
+                )
+              }
+            })
+          }
         </TechDataMenu>
-
-        <TechDataDetail> {productsObj[displayIndex].techDetail} </TechDataDetail>
+        
+        <TechDataDetail> {productsObj[displayIndex].techDetail[techMenuIndex]} </TechDataDetail>
       </ProductDetail>
     </ProductWrapper> );
   }
@@ -45,7 +61,8 @@ class Product extends Component {
 const mapStateToProps = (state) => {
   return {
     products: state.getIn(['product','products']),
-    displayIndex: state.getIn(['product','currentDisplayIndex'])
+    displayIndex: state.getIn(['product','currentDisplayIndex']),
+    techMenuIndex: state.getIn(['product','currentTechMenuIndex'])
   }
 };
 
@@ -53,6 +70,9 @@ const mapDispathToProps = (dispatch) => {
   return {
     handleDisplayIndex(index){
       dispatch(actionCreator.updateDisplayIndex(index));
+    },
+    handleTechMeunIndex(index){
+      dispatch(actionCreator.updateTechMenuIndex(index));
     }
   }
 };

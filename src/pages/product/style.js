@@ -40,6 +40,27 @@ export const ProductCategoryItem = styled.div`
   font-size: 20px;
   color: #0a3343;
   line-height: 20px;
+  &:hover{
+    color: white;
+    background: #0a3343;
+  }
+`
+
+export const ProductCategoryItemActive = styled.div`
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  padding: 20px 0 0 10px;
+  border: 1px solid gray;
+  height: 40px;
+  text-align: left;
+  font-size: 20px;
+
+  line-height: 20px;
+
+  color: white;
+  background: #0a3343;
   
 `
 
@@ -116,6 +137,16 @@ export const TechDataMenuItem = styled.div`
   }
 `;
 
+export const TechDataMenuItemActive = styled.div`
+  float: left;
+  height: 50px;
+  padding: 0 10px;
+  margin: 0 17px;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 3px solid #000;;
+`;
 
 export const TechDataDetail = styled.div`
   float: left;
