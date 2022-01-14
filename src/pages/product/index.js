@@ -6,32 +6,27 @@ import {  ProductWrapper,
           ProductDetailImageWrapper, ImageContainer, Thumbnail, ThumbnailWrapper
 } from './style';
 import { connect } from 'react-redux';
-import product1 from '../../resource/image/product1.jpg'
-import product1_1 from '../../resource/image/product1_1.jpg'
-import product1_2 from '../../resource/image/product1_2.jpg'
-import product2 from '../../resource/image/product2.png'
-import product2_1 from '../../resource/image/product2_1.png'
-import product2_2 from '../../resource/image/product2_2.jpg'
-import product3 from '../../resource/image/product3.jpg'
-import product4 from '../../resource/image/product4.png'
-import product5 from '../../resource/image/product5.jpg'
-import product6 from '../../resource/image/product6.jpg'
-import product7 from '../../resource/image/product7.jpg'
-import product8 from '../../resource/image/product8.jpg'
-import product9 from '../../resource/image/product9.png'
-import product10 from '../../resource/image/product10.jpg'
-import product11 from '../../resource/image/product11.jpg'
 import { actionCreator } from './store/index.js';
+import IMAGES from '../../resource/index.js';
 
 class Product extends Component {
   render() { 
-    const productImg = [
-    [product1, product1_1,product1_2],[product2_1, product2,product2_2,product4],[product3, product2,product3,product4,product5],[product4, product2,product3,product4,product5],[product5, product2,product3,product4,product5],
-    [product6, product2,product3,product4,product5],[product7, product2,product3,product4,product5],[product8, product2,product3,product4,product5],[product9, product2,product3,product4,product5],[product10, product2,product3,product4,product5],
-    [product11, product2,product3,product4,product5]
-    ]
     const { products, displayIndex, techMenuIndex, handleDisplayIndex, handleTechMeunIndex, updateThumbIndex, thumbIndex } = this.props;
     const productsObj = products.toJS();
+    const productImg = [
+    [IMAGES.product1, IMAGES.product1_1,IMAGES.product1_2],
+    [IMAGES.product2_1, IMAGES.product2,IMAGES.product2_2,IMAGES.product4],
+    [IMAGES.product3, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
+    [IMAGES.product4, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
+    [IMAGES.product5, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
+    [IMAGES.product6, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
+    [IMAGES.product7, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
+    [IMAGES.product8, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
+    [IMAGES.product9, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
+    [IMAGES.product10, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
+    [IMAGES.product11, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5]
+    ]
+    
     return ( 
     <ProductWrapper>
       <ProductCategory>
@@ -46,11 +41,9 @@ class Product extends Component {
                 <ProductCategoryItem onClick={() => handleDisplayIndex(index)} key={item.productName+index}>{item.productName}</ProductCategoryItem>
               )
             }  
-            
           })
         } 
       </ProductCategory>
-      
       <ProductDetail>
         <ProduchDetailTitle>{productsObj[displayIndex].productName}</ProduchDetailTitle>
         <ProductDetailImageWrapper >
@@ -66,10 +59,8 @@ class Product extends Component {
           </ThumbnailWrapper> 
         </ProductDetailImageWrapper>
         <ProductDetailContent>{productsObj[displayIndex].productIntro}</ProductDetailContent>
-
         <TechDataMenu>
-          {['Usage','Specs','Features','Sample'].map((item,index)=>{
-               
+          {['Usage','Specs','Features','Sample'].map((item,index)=>{   
               if(index === techMenuIndex){
                 return(
                   <TechDataMenuItemActive onClick={() => handleTechMeunIndex(index)} key={item+index} >{item}</TechDataMenuItemActive>
@@ -82,7 +73,6 @@ class Product extends Component {
             })
           }
         </TechDataMenu>
-        
         <TechDataDetail> {productsObj[displayIndex].techDetail[techMenuIndex]} </TechDataDetail>
       </ProductDetail>
     </ProductWrapper> );
@@ -102,8 +92,6 @@ const mapDispathToProps = (dispatch) => {
   return {
     handleDisplayIndex(index){
       dispatch(actionCreator.updateDisplayIndex(index));
-      dispatch(actionCreator.updateTechMenuIndex(0));
-      dispatch(actionCreator.updateThumbIndex(0));
     },
     handleTechMeunIndex(index){
       dispatch(actionCreator.updateTechMenuIndex(index));

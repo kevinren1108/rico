@@ -77,7 +77,12 @@ const defaultState = fromJS({
 
 export default (state = defaultState, action) => {
   if(action.type === actionType.UPDATE_DISPLAY_INDEX){
-    return state.set('currentDisplayIndex',action.newIndex)
+    const newState = state.merge({
+      currentDisplayIndex: action.newIndex,
+      currentTechMenuIndex: 0,
+      imageBaseOnThumbIndex: 0
+    })
+    return newState
   }
   if(action.type === actionType.UPDATE_TECH_MENU_INDEX){
     return state.set('currentTechMenuIndex',action.newIndex)
