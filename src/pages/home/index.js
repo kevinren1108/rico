@@ -3,13 +3,14 @@ import {  HomeWrapper,
           FeatureSwiperWrapper, 
           WhatWeDOWrapper, 
           ProductSwiperWrapper, 
-          WhoWeAreWrapper 
+          
 } from './style';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import SwiperCore, { Autoplay } from 'swiper';
 import 'swiper/css';
 import FeatureSwiper from './featureSwiper';
+import CompanyIntro from './companyIntro'
 
 class Home extends Component {
   
@@ -22,9 +23,11 @@ class Home extends Component {
     
     return (
       <HomeWrapper>  
+        <CompanyIntro/>
+        <FeatureSwiper /> 
         <WhatWeDOWrapper>What we do</WhatWeDOWrapper>
-        <FeatureSwiper />    
-        <WhoWeAreWrapper>who we are</WhoWeAreWrapper>
+           
+        
       </HomeWrapper>
       
     );
