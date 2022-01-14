@@ -53,6 +53,7 @@ export const NavItem = styled.div`
   color: #0a3343;
   border-bottom: 5px solid transparent;
   &:hover{
+    background: rgba(176,190,197,0.4);
     border-bottom: 5px solid #0a3343;
   }
   

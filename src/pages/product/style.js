@@ -42,7 +42,7 @@ export const ProductCategoryItem = styled.div`
   line-height: 20px;
   &:hover{
     color: white;
-    background: #0a3343;
+    background: #b0bec5;
   }
 `
 
@@ -56,11 +56,9 @@ export const ProductCategoryItemActive = styled.div`
   height: 40px;
   text-align: left;
   font-size: 20px;
-
   line-height: 20px;
-
   color: white;
-  background: #0a3343;
+  background: #808e95;
   
 `
 
@@ -88,17 +86,41 @@ export const ProduchDetailTitle = styled.div`
   text-align: left;
 `;
 
-export const ProductDetailImage = styled.div`
+export const ProductDetailImageWrapper = styled.div`
   font-size: 20px;
   float: left;
   margin-top: 10px;
-  
   height: 325px;
-  width: 45%;
+  width: 325px;
   margin-left: 2%;
   line-height: 325px;
-  text-align: center;
 `;
+
+export const ImageContainer = styled.img`
+  float: left;
+  margin: 0 37.5px;
+  max-width: 250px;
+  max-height: 250px;
+`
+
+export const ThumbnailWrapper = styled.div`
+  margin: 12.5px 0;
+  height: 50px;
+  position: absolute;
+  width: 325px;
+  top: 295px;
+`
+
+export const Thumbnail = styled.img`
+  float: left;
+  height: 50px;
+  width: 50px;
+  max-width: 50px;
+  max-height: 50px;
+
+  border: 4px solid #808e95;
+  margin-right: 3px;
+`
 
 export const ProductDetailContent = styled.div`
   float: right;

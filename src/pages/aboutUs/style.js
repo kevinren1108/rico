@@ -31,9 +31,8 @@ export const Division = styled.div`
 `;
 
 export const DivisionContent = styled.div`
-color: #0a3343;
+  color: #0a3343;
   font-size: 20px;
-
   margin-top: 40px;
 `;
 

@@ -71,7 +71,8 @@ const defaultState = fromJS({
     }
   ],
   currentDisplayIndex: 0,
-  currentTechMenuIndex: 0
+  currentTechMenuIndex: 0,
+  imageBaseOnThumbIndex: 0
 });
 
 export default (state = defaultState, action) => {
@@ -81,5 +82,9 @@ export default (state = defaultState, action) => {
   if(action.type === actionType.UPDATE_TECH_MENU_INDEX){
     return state.set('currentTechMenuIndex',action.newIndex)
   }
+  if(action.type === actionType.UPDATE_THUMB_INDEX){
+    return state.set('imageBaseOnThumbIndex',action.newIndex)
+  }
+
   return state;
 };
