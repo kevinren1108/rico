@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom'
 import { HeaderWrapper, LogoWrapper, NavItem, NavWrapper } from './style'
 
 class Header extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {  }
-  }
   render() { 
     return ( <div>
 

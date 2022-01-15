@@ -6,12 +6,6 @@ import CompanyIntro from './companyIntro'
 import BusinessField from './businessField';
 
 class Home extends Component {
-  
-  constructor(props) {
-    super(props);
-    this.state = {  }
-  }
-  
   render() { 
     return (
       <HomeWrapper>  
