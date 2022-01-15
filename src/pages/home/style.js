@@ -19,41 +19,4 @@ export const HomeWrapper = styled.div`
   overflow: hidden;
 `;
 
-export const FeatureSwiperWrapper = styled.div`
-  height: 400px;
-  background: whitesmoke;
-  text-align: center;
-  margin-top: 10px;
-  line-height: 400px;
-  font-size: 40px;
-`; 
-
-export const WhatWeDOWrapper = styled.div`
-  height: 400px;
-  background: whitesmoke;
-  text-align: center;
-  margin-top: 10px;
-  line-height: 400px;
-  font-size: 40px;
-`;
-
-export const ProductSwiperWrapper = styled.div`
-  height: 400px;
-  background: whitesmoke;
-  text-align: center;
-  margin-top: 10px;
-  line-height: 400px;
-  font-size: 40px;
-`; 
-
-export const WhoWeAreWrapper = styled.div`
-  height: 400px;
-  background: whitesmoke;
-  text-align: center;
-  margin-top: 10px;
-  line-height: 400px;
-  font-size: 40px;
-`;
-
-
  

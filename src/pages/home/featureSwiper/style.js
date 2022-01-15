@@ -12,7 +12,6 @@ export const FeatureSwiperImageWrapper = styled.div`
   float: left;
   margin-top: 50px;
   margin-left: 50px;
-  
 `
 
 export const ImageContainer = styled.img`

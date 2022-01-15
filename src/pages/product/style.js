@@ -40,6 +40,7 @@ export const ProductCategoryItem = styled.div`
   font-size: 20px;
   color: #0a3343;
   line-height: 20px;
+  cursor: pointer;
   &:hover{
     color: white;
     background: #b0bec5;
@@ -117,7 +118,7 @@ export const Thumbnail = styled.img`
   width: 50px;
   max-width: 50px;
   max-height: 50px;
-
+  cursor: pointer;
   border: 4px solid #808e95;
   margin-right: 3px;
 `
@@ -154,6 +155,7 @@ export const TechDataMenuItem = styled.div`
   font-size: 20px;
   line-height: 50px;
   text-align: center;
+  cursor: pointer;
   &:hover{
     border-bottom: 3px solid #000;;
   }

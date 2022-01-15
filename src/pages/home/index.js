@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
-import {  HomeWrapper, 
-          FeatureSwiperWrapper, 
-          WhatWeDOWrapper, 
-          ProductSwiperWrapper, 
-          
-} from './style';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import SwiperCore, { Autoplay } from 'swiper';
+import {  HomeWrapper } from './style';
 import 'swiper/css';
 import FeatureSwiper from './featureSwiper';
 import CompanyIntro from './companyIntro'
+import BusinessField from './businessField';
 
 class Home extends Component {
   
@@ -20,12 +13,11 @@ class Home extends Component {
   }
   
   render() { 
-    
     return (
       <HomeWrapper>  
         <CompanyIntro/>
         <FeatureSwiper /> 
-        <WhatWeDOWrapper>What we do</WhatWeDOWrapper>
+        <BusinessField />
            
         
       </HomeWrapper>
