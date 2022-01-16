@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import media from '../../media'
+
 
 export const HomeWrapper = styled.div`
   align-items: center;
@@ -17,6 +19,7 @@ export const HomeWrapper = styled.div`
   width: 100%;
   max-width: 1170px;
   overflow: hidden;
+  
 `;
 
  

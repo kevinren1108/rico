@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import img from '../../../statics/companyIntro.jpg'
+import media from '../../../media.js'
+
 
 export const BgImage = styled.div`
   background: url(${img});
@@ -9,6 +11,9 @@ export const BgImage = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  ${media.tablet`
+    margin-top: 50px;
+  `};
 `
 
 export const BgTextWrapper = styled.div`
@@ -25,6 +30,11 @@ export const BgTextWrapper = styled.div`
   width: 80%;
   padding: 20px;
   text-align: center;
+  ${media.tablet`
+    margin-top: 50px;
+    height: 320px;
+  `};
+  
 `
 
 export const BgTextBusinessName = styled.div`
@@ -38,6 +48,10 @@ export const BgTextBusinessName = styled.div`
   font-size: 40px;
   line-height: 50px;
   color: white;
+  
+  ${media.tablet`
+    display:none;
+  `};
 `;
 
 export const SmallFont = styled.div`
@@ -57,4 +71,24 @@ export const BgTextBusinessIntro = styled.div`
   font-size: 18px;
   line-height: 36px;
   color: white;
+
+  ${media.tablet`
+    margin: 0 0;
+    width: 100%;
+    height: 320px;
+    font-size: 18px;
+    line-height: 36px;
+    color: white;
+  `};
+
+  ${media.mobile`
+    margin: 0 0;
+    width: 100%;
+    height: 320px;
+    font-size: 16px;
+    line-height: 25px;
+    color: white;
+  `};
+
+
 `;

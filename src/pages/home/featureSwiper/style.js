@@ -1,9 +1,11 @@
 import styled from 'styled-components'
+import media from '../../../media.js'
 
 export const FeatureSwiperWrapper = styled.div`
   height: 500px;
   margin-top: 10px;
   font-size: 40px;
+  
 `; 
 
 export const FeatureSwiperImageWrapper = styled.div`
@@ -28,6 +30,7 @@ export const ThumbnailWrapper = styled.div`
   height: 380px;
   float: left;
   overflow: hidden;
+  
 `
 
 export const Thumbnail = styled.img`
@@ -45,6 +48,7 @@ export const FeatureSwiperProductWrapper = styled.div`
   float: left;
   margin-top: 50px;
   margin-left: 50px;
+  
 `
 
 export const ProductName = styled.div`
@@ -56,6 +60,9 @@ export const ProductName = styled.div`
   margin-top: 10px;
   margin-left: 10px;
   text-align: left;
+  ${media.tablet`
+    color: red;
+  `};
 `
 
 export const ProductDetail = styled.div`

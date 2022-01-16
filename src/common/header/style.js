@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import logoImg from '../../statics/logo.png'
+import media from "./../../media.js"
 
 export const HeaderWrapper = styled.div`
   align-items: center;
@@ -19,6 +20,15 @@ export const HeaderWrapper = styled.div`
   width: 100%;
   max-width: 1170px;
   color: #0a3343;
+  ${media.tablet`
+    padding: 0px 0px 0px 0px;
+    height: 50px;
+    position: fixed;
+    z-index: 5;
+    background: white;
+  `};
+  
+
 `
 
 export const LogoWrapper = styled.div`
@@ -27,7 +37,12 @@ export const LogoWrapper = styled.div`
   background-image: url(${logoImg});
   background-size: contain;
   width: 100px;
-  height: 100px
+  height: 100px;
+  ${media.tablet`
+    width:45px;
+    height: 45px;
+    margin: 5px 0 0 5px;
+  `};
 `
 
 export const NavWrapper = styled.div`
@@ -35,7 +50,15 @@ export const NavWrapper = styled.div`
   display: block;
   position: absolute;
   right: 0px;
-  top: 0px
+  top: 0px;
+
+  ${media.tablet`
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+  `};
+  
 `
 
 export const NavItem = styled.div`
@@ -56,5 +79,18 @@ export const NavItem = styled.div`
     background: rgba(176,190,197,0.4);
     border-bottom: 5px solid #0a3343;
   }
+  ${media.tablet`
+    margin: 15px 10px 10px 10px;
+    padding: 0 0 0 0;
+    color: #0a3343;
+    border-bottom: 5px solid #0a3343;
+    padding: 0 5px 0 5px;
+    &:hover{
+      background: rgba(176,190,197,0.4);
+      border-bottom: 5px solid #0a3343;
+  }
+  `};
+  
+ 
   
 `
