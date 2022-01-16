@@ -40,6 +40,7 @@ export const ProductCategoryItem = styled.div`
   font-size: 20px;
   color: #0a3343;
   line-height: 20px;
+
   cursor: pointer;
   &:hover{
     color: white;
@@ -155,6 +156,7 @@ export const TechDataMenuItem = styled.div`
   font-size: 20px;
   line-height: 50px;
   text-align: center;
+  
   cursor: pointer;
   &:hover{
     border-bottom: 3px solid #000;;
