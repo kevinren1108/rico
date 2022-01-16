@@ -3,10 +3,6 @@ import { FooterWrapper,FooterMenu,MenuItem,CopyRight,Address } from './style.js'
 import { Link } from 'react-router-dom'
 
 class Footer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {  }
-  }
   render() { 
     return ( 
     <FooterWrapper>
