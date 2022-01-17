@@ -38,11 +38,8 @@ class FeatureSwiper extends Component {
           disableOnInteraction: false,
           pauseOnMouseEnter: true
         }}
-
-
         spaceBetween={50}
         slidesPerView={1}
-        
       >
       {
           productsObj.map((item,index) => {
@@ -50,11 +47,8 @@ class FeatureSwiper extends Component {
                 <SwiperSlide key={item.productName+index}>
                   <FeatureSwiperWrapper>
                     <FeatureSwiperImageWrapper >
-                      <ImageContainer src={productImg[index][0]}/>
-                      
-                      
+                      <ImageContainer src={productImg[index][0]}/>                         
                     </FeatureSwiperImageWrapper>
-
                     <FeatureSwiperProductWrapper>
                       <ProductName>
                         {item.productName}
@@ -73,8 +67,6 @@ class FeatureSwiper extends Component {
     );
   }
 }
- 
-
 
 const mapStateToProps = (state) => {
   return {

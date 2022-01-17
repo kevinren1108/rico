@@ -3,11 +3,14 @@ import {  ProductWrapper,
           ProductCategory, ProductCategoryItem, ProductCategoryItemActive,
           ProductDetail, ProduchDetailTitle, ProductDetailContent,
           TechDataMenu, TechDataMenuItem, TechDataDetail, TechDataMenuItemActive,
-          ProductDetailImageWrapper, ImageContainer, Thumbnail, ThumbnailWrapper
+          ProductDetailImageWrapper, ImageContainer, Thumbnail, ThumbnailWrapper,
+          ProductCategorySwiper,SwiperItem
 } from './style';
 import { connect } from 'react-redux';
 import { actionCreator } from './store/index.js';
 import IMAGES from '../../resource/index.js';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Autoplay } from 'swiper';
 
 class Product extends Component {
   render() { 
@@ -26,9 +29,32 @@ class Product extends Component {
     [IMAGES.product10, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
     [IMAGES.product11, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5]
     ]
-    
+    SwiperCore.use([Autoplay])
     return ( 
     <ProductWrapper>
+      <ProductCategorySwiper>
+      <Swiper
+        loop={true}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true
+        }}
+        spaceBetween={10}
+        slidesPerView={3}
+      >
+      {
+          productsObj.map((item,index) => {
+              return (
+                <SwiperSlide key={item.productName+index}>
+                  <SwiperItem onClick={() => handleDisplayIndex(index)}>{item.productName}</SwiperItem>
+                </SwiperSlide>
+              ) 
+          })
+        } 
+      </Swiper>
+      </ProductCategorySwiper>
+
       <ProductCategory>
         {
           productsObj.map((item,index) => {

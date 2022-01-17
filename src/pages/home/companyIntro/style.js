@@ -12,7 +12,8 @@ export const BgImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   ${media.tablet`
-    margin-top: 50px;
+    margin-top: 25px;
+    height: 250px;
   `};
 `
 
@@ -30,9 +31,11 @@ export const BgTextWrapper = styled.div`
   width: 80%;
   padding: 20px;
   text-align: center;
+ 
   ${media.tablet`
-    margin-top: 50px;
-    height: 320px;
+    top: 175px;
+    margin-top: 0px;
+    height: 180px;
   `};
   
 `
@@ -62,7 +65,6 @@ export const SmallFont = styled.div`
 
 export const BgTextBusinessIntro = styled.div`
   float: left;
-  
   margin-left: 25px;
   margin-bottom: 25px;
   height: 200px;
@@ -71,22 +73,22 @@ export const BgTextBusinessIntro = styled.div`
   font-size: 18px;
   line-height: 36px;
   color: white;
-
+  overflow: hidden;
   ${media.tablet`
     margin: 0 0;
     width: 100%;
-    height: 320px;
-    font-size: 18px;
-    line-height: 36px;
+    height: 180px;
+    font-size: 16px;
+    line-height: 20px;
     color: white;
   `};
 
   ${media.mobile`
     margin: 0 0;
     width: 100%;
-    height: 320px;
-    font-size: 16px;
-    line-height: 25px;
+    height: 180px;
+    font-size: 14px;
+    line-height: 20px;
     color: white;
   `};
 

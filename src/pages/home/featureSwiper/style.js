@@ -5,6 +5,11 @@ export const FeatureSwiperWrapper = styled.div`
   height: 500px;
   margin-top: 10px;
   font-size: 40px;
+  ${media.tablet`
+    margin: 0 0;
+    width: 100%;
+    height: 320px;
+  `};
   
 `; 
 
@@ -14,6 +19,11 @@ export const FeatureSwiperImageWrapper = styled.div`
   float: left;
   margin-top: 50px;
   margin-left: 50px;
+  ${media.tablet`
+    margin: 10px 8.33%;
+    width: 83.34%;
+    height: 310px;
+  `};
 `
 
 export const ImageContainer = styled.img`
@@ -21,25 +31,11 @@ export const ImageContainer = styled.img`
   max-width: 380px;
   max-height: 380px;
   margin: 10px 0 10px 10px;
-`
-
-export const ThumbnailWrapper = styled.div`
-  margin-top: 10px;
-  margin-left: 15px;
-  width: 100px;
-  height: 380px;
-  float: left;
-  overflow: hidden;
-  
-`
-
-export const Thumbnail = styled.img`
-  float: top;
-  height: 87.5px;
-  width: 87.5px;
-  max-width: 87.5px;
-  max-height: 87.5px;
-  margin-bottom: 10px;
+  ${media.tablet`
+    margin: 0 0;
+    max-width: 83.34%;
+    max-height: 300px;
+  `};
 `
 
 export const FeatureSwiperProductWrapper = styled.div`
@@ -48,7 +44,11 @@ export const FeatureSwiperProductWrapper = styled.div`
   float: left;
   margin-top: 50px;
   margin-left: 50px;
-  
+  ${media.tablet`
+    margin: 0 8.33%;
+    width: 83.34%;
+    height: 300px;
+  `};
 `
 
 export const ProductName = styled.div`
@@ -61,7 +61,10 @@ export const ProductName = styled.div`
   margin-left: 10px;
   text-align: left;
   ${media.tablet`
-    color: red;
+    margin-left: 0px;
+    line-height: 25px;
+    font-size: 22px;
+    max-width: 83.34%;
   `};
 `
 
@@ -75,6 +78,14 @@ export const ProductDetail = styled.div`
   margin-left: 10px;
   text-align: left;
   overflow: hidden;
+  ${media.tablet`
+    margin-left: 0px;
+    line-height: 25px;
+    font-size: 16px;
+    max-height: 200px;
+    width: 100%;
+    height: 200px;
+  `};
 `
 
 export const ProductDetailBtn = styled.div`
@@ -92,4 +103,17 @@ export const ProductDetailBtn = styled.div`
   font-size: 20px;
   text-align: center;
   padding-top: 7px;
+  
+  ${media.tablet`
+    z-index: 5;
+    margin-left: 0px;
+    line-height: 25px;
+    font-size: 16px;
+    max-height: 300px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    width: 100px;
+  `};
 `

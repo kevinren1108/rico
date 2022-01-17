@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from '../../media.js'
 
 export const ProductWrapper = styled.div`
   align-items: center;
@@ -26,6 +27,9 @@ export const ProductCategory  = styled.div`
   padding-bottom: 20px;
   font-size: 40px;
   padding-top: 10px;
+  ${media.tablet`
+    display: none;
+  `};
 `
 
 export const ProductCategoryItem = styled.div`
@@ -40,7 +44,6 @@ export const ProductCategoryItem = styled.div`
   font-size: 20px;
   color: #0a3343;
   line-height: 20px;
-
   cursor: pointer;
   &:hover{
     color: white;
@@ -73,6 +76,12 @@ export const ProductDetail  = styled.div`
   line-height: 800px;
   font-size: 40px;
   text-align: center;
+
+  ${media.tablet`
+    height: 100%;
+    width: 100%;
+    float: left;
+  `};
 `
 
 export const ProduchDetailTitle = styled.div`
@@ -86,6 +95,14 @@ export const ProduchDetailTitle = styled.div`
   font-size: 30px;
   line-height: 30px;
   text-align: left;
+  ${media.tablet`
+    width: 100%;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    padding: 0 0 0 0;
+  `};
 `;
 
 export const ProductDetailImageWrapper = styled.div`
@@ -96,6 +113,7 @@ export const ProductDetailImageWrapper = styled.div`
   width: 325px;
   margin-left: 2%;
   line-height: 325px;
+
 `;
 
 export const ImageContainer = styled.img`
@@ -111,6 +129,11 @@ export const ThumbnailWrapper = styled.div`
   position: absolute;
   width: 325px;
   top: 295px;
+  ${media.tablet`
+    top: 410px;
+    float: left;
+    margin: 12.5px 10px;
+  `};
 `
 
 export const Thumbnail = styled.img`
@@ -134,6 +157,11 @@ export const ProductDetailContent = styled.div`
   font-size: 16px;
   line-height: 20px;
   text-align: left;
+  ${media.tablet`
+    width: 83.34%;
+    float: left;
+    margin: 12.5px 10px;
+  `};
 `;
 
 export const TechDataMenu = styled.div` 
@@ -146,6 +174,11 @@ export const TechDataMenu = styled.div`
   font-size: 20px;
   line-height: 50px;
   text-align: center;
+  ${media.tablet`
+    width: 83.34%;
+    float: left;
+    margin: 12.5px 10px;
+  `};
 `;
 
 export const TechDataMenuItem = styled.div`
@@ -156,10 +189,19 @@ export const TechDataMenuItem = styled.div`
   font-size: 20px;
   line-height: 50px;
   text-align: center;
-  
   cursor: pointer;
+  ${media.tablet`
+    height: 30px;
+    width: 18.99%;
+    margin: 0 0;
+    padding: 0 0;
+    float: left;
+    margin: 12.5px 10px;
+    line-height: 24px;
+    font-size: 16px;
+  `};
   &:hover{
-    border-bottom: 3px solid #000;;
+    border-bottom: 3px solid #000;
   }
 `;
 
@@ -171,7 +213,17 @@ export const TechDataMenuItemActive = styled.div`
   font-size: 20px;
   line-height: 50px;
   text-align: center;
-  border-bottom: 3px solid #000;;
+  border-bottom: 3px solid #000;
+  ${media.tablet`
+    height: 30px;
+    width: 18.99%;
+    margin: 0 0;
+    padding: 0 0;
+    float: left;
+    margin: 12.5px 10px;
+    line-height: 24px;
+    font-size: 16px;
+  `};
 `;
 
 export const TechDataDetail = styled.div`
@@ -181,11 +233,30 @@ export const TechDataDetail = styled.div`
   margin-top: 10px;
   margin-left: 2%;
   margin-right: 2%;
-
-  
   font-size: 16px;
   line-height: 25px;
-  text-overflow: inherit;
   text-align: left;
+  ${media.tablet`
+    margin-left: 8.33%; 
+    width: 83.34%;
+    height: 200px;
+  `};
 `;
 
+export const ProductCategorySwiper = styled.div`
+  margin-top: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  @media (min-width: 770px) {
+    display: none;
+  }
+`;
+
+export const SwiperItem = styled.div`
+  border-bottom: 3px solid #0a3343;
+  text-align: center;
+  line-height: 25px;
+  font-size: 20px;
+  height: 30px;
+  background: rgba(176,190,197,0.4);
+`;
