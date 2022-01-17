@@ -67,7 +67,7 @@ export const BgTextBusinessIntro = styled.div`
   float: left;
   margin-left: 25px;
   margin-bottom: 25px;
-  height: 200px;
+  height: 250px;
   width: 680px;
   text-align: left;
   font-size: 18px;
