@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HoursItem, HoursItemWrapper, HoursItemTime, AboutUsWrapper, Division, DivisionContent, FindUs, Hours} from './style';
+import { HoursItem, HoursItemWrapper, HoursItemTime, AboutUsWrapper, Division, DivisionContent, FindUs, FindUsTitle, HoursTitle, Hours} from './style';
 
 
 class AboutUs extends Component {
@@ -20,14 +20,14 @@ class AboutUs extends Component {
         </DivisionContent>
       </Division>
       <FindUs>
-        <h1>Address</h1>
+        <FindUsTitle>Address</FindUsTitle>
         <p>#45 - 6 Ratner St</p>
         <p>Emerald Park, SK</p>
         <p>Canada, S4L0E3</p>
         
       </FindUs>
       <Hours>
-        <h1>Hours</h1>
+        <HoursTitle>Hours</HoursTitle>
         {
           ['Monday','Tuesday','Wednesday','Thursday','Friday'].map((date) => {
             return(
