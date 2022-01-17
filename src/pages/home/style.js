@@ -1,6 +1,4 @@
-import styled from 'styled-components'
-import media from '../../media'
-
+import styled from "styled-components";
 
 export const HomeWrapper = styled.div`
   align-items: center;

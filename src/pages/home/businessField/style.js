@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import media from "../../../media.js"
+import media from "../../../media.js";
 
 export const BusinessFieldWrapper = styled.div`
   height: 400px;

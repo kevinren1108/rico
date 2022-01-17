@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import media from '../../../media.js'
+import styled from "styled-components";
+import media from "../../../media.js";
 
 export const FeatureSwiperWrapper = styled.div`
   height: 500px;
@@ -24,7 +24,7 @@ export const FeatureSwiperImageWrapper = styled.div`
     width: 83.34%;
     height: 310px;
   `};
-`
+`;
 
 export const ImageContainer = styled.img`
   float: left;
@@ -36,7 +36,7 @@ export const ImageContainer = styled.img`
     max-width: 83.34%;
     max-height: 300px;
   `};
-`
+`;
 
 export const FeatureSwiperProductWrapper = styled.div`
   height: 400px;
@@ -49,7 +49,7 @@ export const FeatureSwiperProductWrapper = styled.div`
     width: 83.34%;
     height: 300px;
   `};
-`
+`;
 
 export const ProductName = styled.div`
   height: 40px;
@@ -66,7 +66,7 @@ export const ProductName = styled.div`
     font-size: 22px;
     max-width: 83.34%;
   `};
-`
+`;
 
 export const ProductDetail = styled.div`
   height: 280px;
@@ -86,7 +86,7 @@ export const ProductDetail = styled.div`
     width: 100%;
     height: 200px;
   `};
-`
+`;
 
 export const ProductDetailBtn = styled.div`
   height: 30px;
@@ -116,4 +116,4 @@ export const ProductDetailBtn = styled.div`
     right: 20px;
     width: 100px;
   `};
-`
+`;

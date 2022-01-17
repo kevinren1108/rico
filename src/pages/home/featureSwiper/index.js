@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { connect } from 'react-redux';
-import SwiperCore, { Autoplay } from 'swiper';
-import 'swiper/css';
-import { Link } from 'react-router-dom';
-import IMAGES from '../../../resource/index.js'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { connect } from "react-redux";
+import SwiperCore, { Autoplay } from "swiper";
+import "swiper/css";
+import { Link } from "react-router-dom";
+import IMAGES from "../../../resource/index.js";
 import {  FeatureSwiperWrapper, 
           FeatureSwiperImageWrapper, ImageContainer, 
           FeatureSwiperProductWrapper, ProductName, ProductDetail, ProductDetailBtn
-        } from './style';
-import { actionCreator } from '../../product/store/index.js';
+        } from "./style";
+import { actionCreator } from "../../product/store/index.js";
 
 class FeatureSwiper extends Component {
   
@@ -27,9 +27,10 @@ class FeatureSwiper extends Component {
       [IMAGES.product9],
       [IMAGES.product10],
       [IMAGES.product11]
-    ]
-    SwiperCore.use([Autoplay])
-    const productsObj = this.props.products.toJS();
+    ];
+    SwiperCore.use([Autoplay]);
+    const { products, handleDetailBtn } = this.props;
+    const productsObj = products.toJS();
     return ( 
       <Swiper
         loop={true}
@@ -56,11 +57,11 @@ class FeatureSwiper extends Component {
                       <ProductDetail>
                         {item.productIntro}
                       </ProductDetail>
-                      <Link to='/product'><ProductDetailBtn onClick={() => this.props.handleDetailBtn(index)}>More...</ProductDetailBtn></Link>
+                      <Link to="/product"><ProductDetailBtn onClick={() => handleDetailBtn(index)}>More...</ProductDetailBtn></Link>
                     </FeatureSwiperProductWrapper>
                   </FeatureSwiperWrapper>
                 </SwiperSlide>
-              ) 
+              );
           })
         } 
       </Swiper>
@@ -70,19 +71,19 @@ class FeatureSwiper extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    products: state.getIn(['product','products']),
-    displayIndex: state.getIn(['product','currentDisplayIndex']),
-    techMenuIndex: state.getIn(['product','currentTechMenuIndex']),
-    thumbIndex: state.getIn(['product','imageBaseOnThumbIndex'])
-  }
+    products: state.getIn(["product","products"]),
+    displayIndex: state.getIn(["product","currentDisplayIndex"]),
+    techMenuIndex: state.getIn(["product","currentTechMenuIndex"]),
+    thumbIndex: state.getIn(["product","imageBaseOnThumbIndex"])
+  };
 };
 
 const mapDispathToProps = (dispatch) => {
   return {
     handleDetailBtn(index){  
-      dispatch(actionCreator.updateDisplayIndex(index))
+      dispatch(actionCreator.updateDisplayIndex(index));
     }
-  }
+  };
 };
 
 export default connect(mapStateToProps, mapDispathToProps)(FeatureSwiper);

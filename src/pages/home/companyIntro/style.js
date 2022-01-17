@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import img from '../../../statics/companyIntro.jpg'
-import media from '../../../media.js'
+import styled from "styled-components";
+import img from "../../../statics/companyIntro.jpg";
+import media from "../../../media.js";
 
 
 export const BgImage = styled.div`
@@ -15,7 +15,7 @@ export const BgImage = styled.div`
     margin-top: 25px;
     height: 250px;
   `};
-`
+`;
 
 export const BgTextWrapper = styled.div`
   background-color: rgb(0,0,0); 
@@ -37,8 +37,7 @@ export const BgTextWrapper = styled.div`
     margin-top: 0px;
     height: 180px;
   `};
-  
-`
+`;
 
 export const BgTextBusinessName = styled.div`
   float: left;

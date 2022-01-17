@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import media from '../../media.js'
+import styled from "styled-components";
+import media from "../../media.js";
 
 export const ProductWrapper = styled.div`
   align-items: center;
@@ -30,7 +30,7 @@ export const ProductCategory  = styled.div`
   ${media.tablet`
     display: none;
   `};
-`
+`;
 
 export const ProductCategoryItem = styled.div`
   width: 90%;
@@ -49,7 +49,7 @@ export const ProductCategoryItem = styled.div`
     color: white;
     background: #b0bec5;
   }
-`
+`;
 
 export const ProductCategoryItemActive = styled.div`
   width: 90%;
@@ -64,8 +64,7 @@ export const ProductCategoryItemActive = styled.div`
   line-height: 20px;
   color: white;
   background: #808e95;
-  
-`
+`;
 
 export const ProductDetail  = styled.div`
   width: 62.3%;
@@ -76,13 +75,12 @@ export const ProductDetail  = styled.div`
   line-height: 800px;
   font-size: 40px;
   text-align: center;
-
   ${media.tablet`
     height: 100%;
     width: 100%;
     float: left;
   `};
-`
+`;
 
 export const ProduchDetailTitle = styled.div`
   float: right;
@@ -113,7 +111,6 @@ export const ProductDetailImageWrapper = styled.div`
   width: 325px;
   margin-left: 2%;
   line-height: 325px;
-
 `;
 
 export const ImageContainer = styled.img`
@@ -121,7 +118,7 @@ export const ImageContainer = styled.img`
   margin: 0 37.5px;
   max-width: 250px;
   max-height: 250px;
-`
+`;
 
 export const ThumbnailWrapper = styled.div`
   margin: 12.5px 0;
@@ -134,7 +131,7 @@ export const ThumbnailWrapper = styled.div`
     float: left;
     margin: 12.5px 10px;
   `};
-`
+`;
 
 export const Thumbnail = styled.img`
   float: left;
@@ -145,7 +142,7 @@ export const Thumbnail = styled.img`
   cursor: pointer;
   border: 4px solid #808e95;
   margin-right: 3px;
-`
+`;
 
 export const ProductDetailContent = styled.div`
   float: right;

@@ -1,9 +1,8 @@
 import { BgImage,BgTextWrapper,BgTextBusinessName,BgTextBusinessIntro,SmallFont } from "./style";
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 
 class CompanyIntro extends Component {
-  state = {  }
   render() { 
     return ( 
       <div>

@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {  ProductWrapper, 
           ProductCategory, ProductCategoryItem, ProductCategoryItemActive,
           ProductDetail, ProduchDetailTitle, ProductDetailContent,
           TechDataMenu, TechDataMenuItem, TechDataDetail, TechDataMenuItemActive,
           ProductDetailImageWrapper, ImageContainer, Thumbnail, ThumbnailWrapper,
           ProductCategorySwiper,SwiperItem
-} from './style';
-import { connect } from 'react-redux';
-import { actionCreator } from './store/index.js';
-import IMAGES from '../../resource/index.js';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay } from 'swiper';
+} from "./style";
+import { connect } from "react-redux";
+import { actionCreator } from "./store/index.js";
+import IMAGES from "../../resource/index.js";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay } from "swiper";
 
 class Product extends Component {
   render() { 
@@ -28,8 +28,8 @@ class Product extends Component {
     [IMAGES.product9, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
     [IMAGES.product10, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
     [IMAGES.product11, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5]
-    ]
-    SwiperCore.use([Autoplay])
+    ];
+    SwiperCore.use([Autoplay]);
     return ( 
     <ProductWrapper>
       <ProductCategorySwiper>
@@ -48,9 +48,9 @@ class Product extends Component {
                 <SwiperSlide key={item.productName+index}>
                   <SwiperItem onClick={() => handleDisplayIndex(index)}>{item.productName}</SwiperItem>
                 </SwiperSlide>
-              ) 
+              );
           })
-        } 
+        }
       </Swiper>
       </ProductCategorySwiper>
 
@@ -60,11 +60,11 @@ class Product extends Component {
             if(index === displayIndex){
               return (
                 <ProductCategoryItemActive onClick={() => handleDisplayIndex(index)} key={item.productName+index}>{item.productName}</ProductCategoryItemActive>
-              )
+              );
             }else{
               return (
                 <ProductCategoryItem onClick={() => handleDisplayIndex(index)} key={item.productName+index}>{item.productName}</ProductCategoryItem>
-              )
+              );
             }  
           })
         } 
@@ -78,22 +78,22 @@ class Product extends Component {
               productImg[displayIndex].map((item,index) => {
                 return (
                   <Thumbnail onClick={() => updateThumbIndex(index)} key={item+index} src={productImg[displayIndex][index]}/>
-                )
+                );
               })
             }
           </ThumbnailWrapper> 
         </ProductDetailImageWrapper>
         <ProductDetailContent>{productsObj[displayIndex].productIntro}</ProductDetailContent>
         <TechDataMenu>
-          {['Usage','Specs','Features','Sample'].map((item,index)=>{   
+          {["Usage","Specs","Features","Sample"].map((item,index)=>{   
               if(index === techMenuIndex){
                 return(
                   <TechDataMenuItemActive onClick={() => handleTechMeunIndex(index)} key={item+index} >{item}</TechDataMenuItemActive>
-                )
+                );
               }else{
                 return(
                   <TechDataMenuItem onClick={() => handleTechMeunIndex(index)} key={item+index} >{item}</TechDataMenuItem>
-                )
+                );
               }
             })
           }
@@ -106,11 +106,11 @@ class Product extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    products: state.getIn(['product','products']),
-    displayIndex: state.getIn(['product','currentDisplayIndex']),
-    techMenuIndex: state.getIn(['product','currentTechMenuIndex']),
-    thumbIndex: state.getIn(['product','imageBaseOnThumbIndex'])
-  }
+    products: state.getIn(["product","products"]),
+    displayIndex: state.getIn(["product","currentDisplayIndex"]),
+    techMenuIndex: state.getIn(["product","currentTechMenuIndex"]),
+    thumbIndex: state.getIn(["product","imageBaseOnThumbIndex"])
+  };
 };
 
 const mapDispathToProps = (dispatch) => {
@@ -124,7 +124,7 @@ const mapDispathToProps = (dispatch) => {
     updateThumbIndex(index){
       dispatch(actionCreator.updateThumbIndex(index));
     }
-  }
+  };
 };
 
 export default connect(mapStateToProps, mapDispathToProps)(Product);

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import media from "../../media.js"
+import media from "../../media.js";
 
 export const AboutUsWrapper = styled.div`
   align-items: center;
@@ -106,7 +106,7 @@ export const HoursTitle = styled.div`
 
 export const HoursItemWrapper = styled.div`
   float:left;
-`
+`;
 
 export const HoursItem = styled.div`
   float: left;
@@ -116,10 +116,10 @@ export const HoursItem = styled.div`
   ${media.tablet`
     margin-left: 0;
   `};
-`
+`;
 
 export const HoursItemTime = styled.div`
   float: left;
   margin-left: 10px;
   width: 90px;
-`
+`;

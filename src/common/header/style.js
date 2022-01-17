@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import logoImg from '../../statics/logo.png'
-import media from "./../../media.js"
+import styled from "styled-components";
+import logoImg from "../../statics/logo.png";
+import media from "./../../media.js";
 
 export const HeaderWrapper = styled.div`
   align-items: center;
@@ -29,7 +29,7 @@ export const HeaderWrapper = styled.div`
   `};
   
 
-`
+`;
 
 export const LogoWrapper = styled.div`
   position: absolute;
@@ -43,7 +43,7 @@ export const LogoWrapper = styled.div`
     height: 45px;
     margin: 5px 0 0 5px;
   `};
-`
+`;
 
 export const NavWrapper = styled.div`
   box-sizing: border-box;
@@ -59,7 +59,7 @@ export const NavWrapper = styled.div`
 
   `};
   
-`
+`;
 
 export const NavItem = styled.div`
   font-weight: bold;
@@ -88,9 +88,6 @@ export const NavItem = styled.div`
     &:hover{
       background: rgba(176,190,197,0.4);
       border-bottom: 5px solid #0a3343;
-  }
-  `};
-  
- 
-  
-`
+    }
+  `}
+`;

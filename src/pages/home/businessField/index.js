@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import {BusinessFieldWrapper , FieldName, FieldIntro, MoreBtn} from './style'
+import React, { Component } from "react";
+import {BusinessFieldWrapper , FieldName, FieldIntro} from "./style";
 
 class BusinessField extends Component {
   render() { 
