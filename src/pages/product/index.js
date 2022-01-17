@@ -37,8 +37,7 @@ class Product extends Component {
         loop={true}
         autoplay={{
           delay: 2000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true
+          
         }}
         spaceBetween={10}
         slidesPerView={3}

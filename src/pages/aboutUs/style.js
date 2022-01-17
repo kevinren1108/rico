@@ -97,6 +97,7 @@ export const Hours = styled.div`
 export const HoursTitle = styled.div`
   font-size: 40px;
   color: #0a3343;
+  margin-bottom: 10px;
   ${media.tablet`
     font-size: 24px;
     line-height: 28px;
@@ -111,6 +112,7 @@ export const HoursItem = styled.div`
   float: left;
   margin-left: 10px;
   width: 80px;
+  
   ${media.tablet`
     margin-left: 0;
   `};
