@@ -98,7 +98,7 @@ export const ProduchDetailTitle = styled.div`
     float: left;
     height: 40px;
     line-height: 40px;
-    font-size: 26px;
+    font-size: 20px;
     padding: 0 0 0 0;
   `};
 `;
@@ -106,7 +106,7 @@ export const ProduchDetailTitle = styled.div`
 export const ProductDetailImageWrapper = styled.div`
   font-size: 20px;
   float: left;
-  margin-top: 10px;
+  margin-top: 40px;
   height: 325px;
   width: 325px;
   margin-left: 2%;
@@ -127,7 +127,7 @@ export const ThumbnailWrapper = styled.div`
   width: 325px;
   top: 295px;
   ${media.tablet`
-    top: 410px;
+    top: 475px;
     float: left;
     margin: 12.5px 10px;
   `};
@@ -254,7 +254,7 @@ export const SwiperItem = styled.div`
   border-bottom: 3px solid #0a3343;
   text-align: center;
   line-height: 20px;
-  font-size: 18px;
+  font-size: 16px;
   height: 64px;
   background: rgba(176,190,197,0.4);
 `;

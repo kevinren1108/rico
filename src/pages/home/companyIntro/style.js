@@ -29,9 +29,8 @@ export const BgTextWrapper = styled.div`
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 80%;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
   text-align: center;
- 
   ${media.tablet`
     top: 175px;
     margin-top: 0px;

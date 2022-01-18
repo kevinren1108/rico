@@ -5,6 +5,7 @@ export const FeatureSwiperWrapper = styled.div`
   height: 500px;
   margin-top: 10px;
   font-size: 40px;
+  
   ${media.tablet`
     margin: 0 0;
     width: 100%;
@@ -31,6 +32,7 @@ export const ImageContainer = styled.img`
   max-width: 380px;
   max-height: 380px;
   margin: 10px 0 10px 10px;
+  
   ${media.tablet`
     margin: 0 0;
     max-width: 83.34%;
@@ -47,7 +49,7 @@ export const FeatureSwiperProductWrapper = styled.div`
   ${media.tablet`
     margin: 0 8.33%;
     width: 83.34%;
-    height: 300px;
+    height: 330px;
   `};
 `;
 

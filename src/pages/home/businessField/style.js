@@ -5,7 +5,7 @@ export const BusinessFieldWrapper = styled.div`
   height: 400px;
   margin-top: 10px;
   ${media.tablet`
-    margin: 0 8.33%;
+    margin: 25px 8.33%;
     width: 100%;
     height: 320px;
   `};
