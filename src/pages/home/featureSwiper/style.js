@@ -52,11 +52,11 @@ export const FeatureSwiperProductWrapper = styled.div`
 `;
 
 export const ProductName = styled.div`
-  height: 40px;
+  height: 70px;
   width: 480px;
   float: left;
   line-height: 35px;
-  font-size: 30px;
+  font-size: 28px;
   margin-top: 10px;
   margin-left: 10px;
   text-align: left;

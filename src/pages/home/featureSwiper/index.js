@@ -16,17 +16,12 @@ class FeatureSwiper extends Component {
   
   render() { 
     const productImg = [
-      [IMAGES.product1],
-      [IMAGES.product2_1],
+      [IMAGES.product1_1],
+      [IMAGES.product2],
       [IMAGES.product3],
       [IMAGES.product4],
       [IMAGES.product5],
-      [IMAGES.product6],
-      [IMAGES.product7],
-      [IMAGES.product8],
-      [IMAGES.product9],
-      [IMAGES.product10],
-      [IMAGES.product11]
+      [IMAGES.product6]
     ];
     SwiperCore.use([Autoplay]);
     const { products, handleDetailBtn } = this.props;

@@ -17,17 +17,12 @@ class Product extends Component {
     const { products, displayIndex, techMenuIndex, handleDisplayIndex, handleTechMeunIndex, updateThumbIndex, thumbIndex } = this.props;
     const productsObj = products.toJS();
     const productImg = [
-    [IMAGES.product1, IMAGES.product1_1,IMAGES.product1_2],
-    [IMAGES.product2_1, IMAGES.product2,IMAGES.product2_2,IMAGES.product4],
-    [IMAGES.product3, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
-    [IMAGES.product4, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
-    [IMAGES.product5, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
-    [IMAGES.product6, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
-    [IMAGES.product7, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
-    [IMAGES.product8, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
-    [IMAGES.product9, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
-    [IMAGES.product10, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5],
-    [IMAGES.product11, IMAGES.product2,IMAGES.product3,IMAGES.product4,IMAGES.product5]
+    [IMAGES.product1_1, IMAGES.product1_2, IMAGES.product1_3],
+    [IMAGES.product2],
+    [IMAGES.product3],
+    [IMAGES.product4],
+    [IMAGES.product5],
+    [IMAGES.product6],
     ];
     SwiperCore.use([Autoplay]);
     return ( 
@@ -85,7 +80,7 @@ class Product extends Component {
         </ProductDetailImageWrapper>
         <ProductDetailContent>{productsObj[displayIndex].productIntro}</ProductDetailContent>
         <TechDataMenu>
-          {["Usage","Specs","Features","Sample"].map((item,index)=>{   
+          {["SPECIFICATIONS","TECHNICAL DOCUMENTATION"].map((item,index)=>{   
               if(index === techMenuIndex){
                 return(
                   <TechDataMenuItemActive onClick={() => handleTechMeunIndex(index)} key={item+index} >{item}</TechDataMenuItemActive>

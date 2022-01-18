@@ -37,13 +37,13 @@ export const ProductCategoryItem = styled.div`
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 10px;
-  padding: 20px 0 0 10px;
+  padding: 10px 0 10px 10px;
   border: 1px solid gray;
-  height: 40px;
+  overflow: hidden;
   text-align: left;
   font-size: 20px;
   color: #0a3343;
-  line-height: 20px;
+  line-height: 30px;
   cursor: pointer;
   &:hover{
     color: white;
@@ -56,12 +56,11 @@ export const ProductCategoryItemActive = styled.div`
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 10px;
-  padding: 20px 0 0 10px;
+  padding: 10px 0 10px 10px;
   border: 1px solid gray;
-  height: 40px;
   text-align: left;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 30px;
   color: white;
   background: #808e95;
 `;
@@ -84,15 +83,16 @@ export const ProductDetail  = styled.div`
 
 export const ProduchDetailTitle = styled.div`
   float: right;
-  height: 100px;
+  height: 50px;
   width: 47%;
   margin-top: 10px;
   margin-left: 1%;
   margin-right: 2%;
   padding: 10px 0 0 10px;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 25px;
+  line-height: 28px;
   text-align: left;
+
   ${media.tablet`
     width: 100%;
     float: left;
@@ -148,12 +148,13 @@ export const ProductDetailContent = styled.div`
   float: right;
   height: 215px;
   width: 47%;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 1%;
   margin-right: 2%;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
+
   ${media.tablet`
     width: 83.34%;
     float: left;
@@ -188,8 +189,8 @@ export const TechDataMenuItem = styled.div`
   text-align: center;
   cursor: pointer;
   ${media.tablet`
-    height: 30px;
-    width: 18.99%;
+    height: 48px;
+    width: 42.99%;
     margin: 0 0;
     padding: 0 0;
     float: left;
@@ -212,8 +213,8 @@ export const TechDataMenuItemActive = styled.div`
   text-align: center;
   border-bottom: 3px solid #000;
   ${media.tablet`
-    height: 30px;
-    width: 18.99%;
+    height: 48px;
+    width: 42.99%;
     margin: 0 0;
     padding: 0 0;
     float: left;
@@ -225,7 +226,7 @@ export const TechDataMenuItemActive = styled.div`
 
 export const TechDataDetail = styled.div`
   float: left;
-  height: 380px;
+  height: 480px;
   width: 96%;
   margin-top: 10px;
   margin-left: 2%;
@@ -252,8 +253,8 @@ export const ProductCategorySwiper = styled.div`
 export const SwiperItem = styled.div`
   border-bottom: 3px solid #0a3343;
   text-align: center;
-  line-height: 25px;
-  font-size: 20px;
-  height: 30px;
+  line-height: 20px;
+  font-size: 18px;
+  height: 64px;
   background: rgba(176,190,197,0.4);
 `;

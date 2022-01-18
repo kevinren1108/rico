@@ -11,12 +11,9 @@ class AboutUs extends Component {
       <Division>
         About
         <DivisionContent> 
-          <p>100字左右的企业寄语</p>
-          <p>DOHO是在有色金属材料领域有着超过70年的经验与业绩的老牌商社，我们也正在不断努力为制造业领域带来更多创新。
-          DOHO是在有色金属材料领域有着超过70年的经验与业绩的老牌商社，我们也正在不断努力为制造业领域带来更多创新。
-          DOHO是在有色金属材料领域有着超过70年的经验与业绩的老牌商社，我们也正在不断努力为制造业领域带来更多创新。
-          DOHO是在有色金属材料领域有着超过70年的经验与业绩的老牌商社，我们也正在不断努力为制造业领域带来更多创新。 
-          虽然我们经手的材料都是硬材，但我们有着 ...。。。。 </p>
+          <p>Founded in 2020, Rico Waterproofing Materials Canada Co.Ltd.  sets out itself to be one of the leading construction material suppliers in Western Canada. </p>
+          <p>The company specializes in supplying variety of waterproofing adhesives and paints that suite the climate in Canada. At Rico Waterproofing Materials Canada Co.Ltd., We strive to provide our customers with high quaily, affordble waterproofing and building solutions. We value the long term realtion with our customers and archieve complete customer satisifaction is our ultimate goal. </p>
+          <p>Choose Rico, Choose peace of mind!</p>
         </DivisionContent>
       </Division>
       <FindUs>
@@ -24,8 +21,11 @@ class AboutUs extends Component {
         <p>#45 - 6 Ratner St</p>
         <p>Emerald Park, SK</p>
         <p>Canada, S4L0E3</p>
-        
       </FindUs>
+      <Hours>
+        <FindUsTitle>Contect</FindUsTitle>
+        <p>Tel: 306-209-1298</p>
+      </Hours>
       <Hours>
         <HoursTitle>Hours</HoursTitle>
         {

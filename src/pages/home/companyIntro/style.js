@@ -69,7 +69,7 @@ export const BgTextBusinessIntro = styled.div`
   height: 250px;
   width: 680px;
   text-align: left;
-  font-size: 18px;
+  font-size: 15.5px;
   line-height: 36px;
   color: white;
   overflow: hidden;
@@ -85,9 +85,9 @@ export const BgTextBusinessIntro = styled.div`
   ${media.mobile`
     margin: 0 0;
     width: 100%;
-    height: 180px;
-    font-size: 14px;
-    line-height: 20px;
+    height: 200px;
+    font-size: 13px;
+    line-height: 16px;
     color: white;
   `};
 
