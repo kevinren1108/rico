@@ -79,7 +79,6 @@ export const ProductDetail  = styled.div`
     height: fit-content;
     width: 100%;
     float: left;
-    background: red;
   `};
 `;
 
