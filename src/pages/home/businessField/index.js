@@ -7,19 +7,22 @@ class BusinessField extends Component {
       <BusinessFieldWrapper>
         <FieldName>Business Field</FieldName>
         <FieldIntro>
-          <p>There are many types of waterproofing materials. 
-          Some of the best and most common include; Polyurethane, 
-          Cementitious Coating, EPDM Rubber, Rubberized Asphalt, 
-          Thermoplastic, Bituminous Membrane, and PVC Waterproofing 
-          Membrane.</p>
-          <p>There are many types of waterproofing materials. 
-          Some of the best and most common include; Polyurethane, 
-          Cementitious Coating, EPDM Rubber, Rubberized Asphalt, 
-          Thermoplastic, Bituminous Membrane, and PVC Waterproofing 
-          Membrane. Coating, EPDM Rubber, Rubberized Asphalt, 
-          Thermoplastic, Bituminous Membrane, and PVC Waterproofing 
+          <p>
+            RICO WATERPROOFING MATERIALS CANADA CD. LTD was established on April 3, 2020. The company s business scope is specialty-line building supplies merchant wholesale. primarily engagedin wholesaling specialized lines of building supplies.
           </p>
-
+          <p>
+            • aggregate merchant wholesalers
+            • asphalt roofing materials merchant wholesalers
+            • building stones merchant wholesalers
+            • ceramic wall and floor tiles merchant wholesalers
+            • concrete building products merchant wholesalers
+            • drywall and plaster supplies merchant wholesalers
+            • eavestroughing merchant wholesalers
+            • masons materials merchant wholesalers
+            • metal siding and roofing materials merchant wholesalers
+            • prefabricated cottages merchant wholesalers
+            • wire fences and accessories merchant wholesalers
+          </p>
         </FieldIntro>
       </BusinessFieldWrapper>
 

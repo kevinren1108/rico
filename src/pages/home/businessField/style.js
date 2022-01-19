@@ -33,7 +33,7 @@ export const FieldIntro = styled.div`
   ${media.tablet`
     margin: 0 0 0 0;
     width: 83.34%;
-    height: 300px;
+    height: 350px;
     font-size: 14px;
     line-height: 20px;
     overflow: hidden;
