@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HoursItem, HoursItemWrapper, HoursItemTime, AboutUsWrapper, Division, DivisionContent, FindUs, FindUsTitle, HoursTitle, Hours} from "./style";
+import { HoursItem, HoursItemWrapper, HoursItemTime, AboutUsWrapper, Division, DivisionContent, FindUsTitle, HoursTitle, Hours} from "./style";
 
 
 class AboutUs extends Component {
@@ -16,12 +16,12 @@ class AboutUs extends Component {
           <p>Choose Rico, Choose peace of mind!</p>
         </DivisionContent>
       </Division>
-      <FindUs>
+      <Hours>
         <FindUsTitle>Address</FindUsTitle>
         <p>#45 - 6 Ratner St</p>
         <p>Emerald Park, SK</p>
         <p>Canada, S4L0E3</p>
-      </FindUs>
+      </Hours>
       <Hours>
         <FindUsTitle>Contect</FindUsTitle>
         <p>Tel: 306-209-1298</p>

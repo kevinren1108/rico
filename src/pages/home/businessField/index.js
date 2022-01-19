@@ -5,7 +5,7 @@ class BusinessField extends Component {
   render() { 
     return ( 
       <BusinessFieldWrapper>
-        <FieldName>business field</FieldName>
+        <FieldName>Business Field</FieldName>
         <FieldIntro>
           <p>There are many types of waterproofing materials. 
           Some of the best and most common include; Polyurethane, 

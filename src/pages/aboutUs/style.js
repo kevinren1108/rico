@@ -31,7 +31,7 @@ export const Division = styled.div`
   float: left;
   margin-left: 15px;
   padding-bottom: 20px;
-  font-size: 40px;
+  font-size: 30px;
   color: #0a3343;
   padding-top: 10px;
   height: 500px;
@@ -46,7 +46,7 @@ export const Division = styled.div`
 
 export const DivisionContent = styled.div`
   color: #0a3343;
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 40px;
   ${media.tablet`
     margin-top: 5px;
@@ -57,22 +57,8 @@ export const DivisionContent = styled.div`
   `};
 `;
 
-
-export const FindUs = styled.div`
-  width: 31.6%;
-  float: right;
-  margin-left: 15px;
-  font-size: 14px;
-  color: #0a3343;
-  ${media.tablet`
-    top:25px;
-    width: 100%;
-    float: left;
-  `};
-`;
-
 export const FindUsTitle = styled.div`
-  font-size: 40px;
+  font-size: 30px;
   color: #0a3343;
   ${media.tablet`
     font-size: 24px;

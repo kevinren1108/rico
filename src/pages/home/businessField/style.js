@@ -14,8 +14,8 @@ export const BusinessFieldWrapper = styled.div`
 export const FieldName = styled.div`
   float: left;
   margin: 25px 0 0 25px;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 30px;
+  line-height: 30px;
   ${media.tablet`
     margin: 0 0;
     width: 83.34%;

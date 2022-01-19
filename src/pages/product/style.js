@@ -18,6 +18,7 @@ export const ProductWrapper = styled.div`
   width: 100%;
   max-width: 1170px;
   overflow: hidden;
+  color: #0a3343;
 `;
 
 export const ProductCategory  = styled.div`
@@ -75,9 +76,10 @@ export const ProductDetail  = styled.div`
   font-size: 40px;
   text-align: center;
   ${media.tablet`
-    height: 100%;
+    height: fit-content;
     width: 100%;
     float: left;
+    background: red;
   `};
 `;
 
@@ -90,7 +92,7 @@ export const ProduchDetailTitle = styled.div`
   margin-right: 2%;
   padding: 10px 0 0 10px;
   font-size: 25px;
-  line-height: 28px;
+  line-height: 30px;
   text-align: left;
 
   ${media.tablet`
@@ -125,7 +127,7 @@ export const ThumbnailWrapper = styled.div`
   height: 50px;
   position: absolute;
   width: 325px;
-  top: 295px;
+  top: 325px;
   ${media.tablet`
     top: 475px;
     float: left;
@@ -148,13 +150,12 @@ export const ProductDetailContent = styled.div`
   float: right;
   height: 215px;
   width: 47%;
-  margin-top: 5px;
+  margin-top: 20px;
   margin-left: 1%;
   margin-right: 2%;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
-
   ${media.tablet`
     width: 83.34%;
     float: left;
@@ -234,10 +235,25 @@ export const TechDataDetail = styled.div`
   font-size: 16px;
   line-height: 25px;
   text-align: left;
+  
   ${media.tablet`
     margin-left: 8.33%; 
     width: 83.34%;
     height: 200px;
+  `};
+`;
+
+export const TechDataDetailItem = styled.div`
+  font-size: 15px;
+  line-height: 20px;
+  border-bottom: 1px dashed #0e0e0e;
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 10px;
+
+  ${media.tablet`
+  font-size: 13px;
+  line-height: 16px;
   `};
 `;
 

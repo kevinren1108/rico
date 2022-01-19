@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {  ProductWrapper, 
           ProductCategory, ProductCategoryItem, ProductCategoryItemActive,
           ProductDetail, ProduchDetailTitle, ProductDetailContent,
-          TechDataMenu, TechDataMenuItem, TechDataDetail, TechDataMenuItemActive,
+          TechDataMenu, TechDataMenuItem, TechDataDetail, TechDataMenuItemActive,TechDataDetailItem,
           ProductDetailImageWrapper, ImageContainer, Thumbnail, ThumbnailWrapper,
           ProductCategorySwiper,SwiperItem
 } from "./style";
@@ -80,7 +80,7 @@ class Product extends Component {
         </ProductDetailImageWrapper>
         <ProductDetailContent>{productsObj[displayIndex].productIntro}</ProductDetailContent>
         <TechDataMenu>
-          {["SPECIFICATIONS","TECHNICAL DOCUMENTATION"].map((item,index)=>{   
+          {["SPECIFICATIONS"].map((item,index)=>{   
               if(index === techMenuIndex){
                 return(
                   <TechDataMenuItemActive onClick={() => handleTechMeunIndex(index)} key={item+index} >{item}</TechDataMenuItemActive>
@@ -93,7 +93,16 @@ class Product extends Component {
             })
           }
         </TechDataMenu>
-        <TechDataDetail> {productsObj[displayIndex].techDetail[techMenuIndex]} </TechDataDetail>
+        <TechDataDetail>  
+          { 
+            productsObj[displayIndex].techDetail.map((item,index)=>{
+              return(
+                <TechDataDetailItem key={item+index}>{item}</TechDataDetailItem>
+              )
+            })
+        
+          }
+        </TechDataDetail>
       </ProductDetail>
     </ProductWrapper> );
   }
