@@ -98,7 +98,7 @@ class Product extends Component {
             productsObj[displayIndex].techDetail.map((item,index)=>{
               return(
                 <TechDataDetailItem key={item+index}>{item}</TechDataDetailItem>
-              )
+              );
             })
         
           }

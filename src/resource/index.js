@@ -7,6 +7,6 @@ const IMAGES = {
   product4 : require("./image/product4.jpeg"),
   product5 : require("./image/product5.jpeg"),
   product6 : require("./image/product6.png")
-}
+};
 
 export default IMAGES;
