@@ -17,7 +17,7 @@ class Product extends Component {
     const { products, displayIndex, techMenuIndex, handleDisplayIndex, handleTechMeunIndex, updateThumbIndex, thumbIndex } = this.props;
     const productsObj = products.toJS();
     const productImg = [
-    [IMAGES.product1_1, IMAGES.product1_2, IMAGES.product1_3],
+    [IMAGES.product1_1, IMAGES.product1_2, IMAGES.product1_3, IMAGES.product1_4, IMAGES.product1_5],
     [IMAGES.product2],
     [IMAGES.product3],
     [IMAGES.product4],
