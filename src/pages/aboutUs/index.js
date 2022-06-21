@@ -25,6 +25,8 @@ class AboutUs extends Component {
       <Hours>
         <FindUsTitle>Contect</FindUsTitle>
         <p>Tel: 306-209-1298</p>
+        <p>Tel: 306-559-4413</p>
+        
       </Hours>
       <Hours>
         <HoursTitle>Hours</HoursTitle>

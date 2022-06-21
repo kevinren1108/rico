@@ -8,7 +8,7 @@ class BusinessField extends Component {
         <FieldName>Business Field</FieldName>
         <FieldIntro>
           <p>
-            RICO WATERPROOFING MATERIALS CANADA CD. LTD was established on April 3, 2020. The company s business scope is specialty-line building supplies merchant wholesale. primarily engagedin wholesaling specialized lines of building supplies.
+            RICO WATERPROOFING MATERIALS CANADA CD. LTD was established on March 4, 2020. The company s business scope is specialty-line building supplies merchant wholesale. primarily engagedin wholesaling specialized lines of building supplies.
           </p>
           <p>
             • aggregate merchant wholesalers
