@@ -40,7 +40,7 @@ export const Division = styled.div`
     width: 93.67%;
     font-size: 24px;
     line-height: 28px;
-    height: 280px;
+    height: 640px;
   `};
 `;
 
