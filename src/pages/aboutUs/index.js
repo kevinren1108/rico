@@ -35,8 +35,7 @@ class AboutUs extends Component {
             return(
               <HoursItemWrapper key={date}>
                 <HoursItem>{date}</HoursItem>
-                <HoursItemTime> 9:00 - 12:00</HoursItemTime>
-                <HoursItemTime>  2:00 - 5:00</HoursItemTime>
+                <HoursItemTime> 9:00 - 5:00</HoursItemTime>
               </HoursItemWrapper>
             );
           })
