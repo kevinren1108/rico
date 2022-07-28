@@ -34,7 +34,7 @@ export const Division = styled.div`
   font-size: 30px;
   color: #0a3343;
   padding-top: 10px;
-  height: 500px;
+  height: 900px;
   ${media.tablet`
     top:25px;
     width: 93.67%;
@@ -109,3 +109,5 @@ export const HoursItemTime = styled.div`
   margin-left: 10px;
   width: 90px;
 `;
+
+

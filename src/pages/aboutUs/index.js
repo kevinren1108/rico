@@ -1,10 +1,24 @@
 import React, { Component } from "react";
 import { HoursItem, HoursItemWrapper, HoursItemTime, AboutUsWrapper, Division, DivisionContent, FindUsTitle, HoursTitle, Hours} from "./style";
-
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+import IMAGES from "../../resource/index.js";
 
 class AboutUs extends Component {
   
   render() { 
+    const images = [
+        {
+          original: IMAGES.about1, thumbnail: IMAGES.about1,
+        },
+        {
+          original: IMAGES.about2, thumbnail: IMAGES.about2,
+        },
+        {
+          original: IMAGES.about3, thumbnail: IMAGES.about3,
+        },
+      ];
+
     return ( 
 
     <AboutUsWrapper>
@@ -15,7 +29,11 @@ class AboutUs extends Component {
           <p>The company specializes in supplying variety of waterproofing adhesives and paints that suite the climate in Canada. At Rico Waterproofing Materials Canada Co.Ltd., We strive to provide our customers with high quality, affordable waterproofing and building solutions. We value the long term realtion with our customers and archieve complete customer satisifaction is our ultimate goal. </p>
           <p>Choose Rico, Choose peace of mind!</p>
         </DivisionContent>
+        <ImageGallery items={images} />
+
+
       </Division>
+      
       <Hours>
         <FindUsTitle>Address</FindUsTitle>
         <p>#45 - 6 Ratner St</p>
