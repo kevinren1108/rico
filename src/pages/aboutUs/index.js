@@ -41,7 +41,7 @@ class AboutUs extends Component {
         <p>Canada, S4L0E3</p>
       </Hours>
       <Hours>
-        <FindUsTitle>Contect</FindUsTitle>
+        <FindUsTitle>Contact</FindUsTitle>
         <p>Tel: 306-209-1298</p>
         <p>Tel: 306-559-4413</p>
         
