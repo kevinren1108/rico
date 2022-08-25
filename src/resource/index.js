@@ -9,7 +9,7 @@ const IMAGES = {
   product4 : require("./image/product4.jpeg"),
   product5 : require("./image/product5.jpeg"),
   product6 : require("./image/product6.png"),
-  about1 : require("./image/about1.jpg"),
+
   about2 : require("./image/about2.jpg"),
   about3 : require("./image/about3.jpg")
 };

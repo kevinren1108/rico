@@ -9,9 +9,6 @@ class AboutUs extends Component {
   render() { 
     const images = [
         {
-          original: IMAGES.about1, thumbnail: IMAGES.about1,
-        },
-        {
           original: IMAGES.about2, thumbnail: IMAGES.about2,
         },
         {
